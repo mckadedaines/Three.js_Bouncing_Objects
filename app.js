@@ -1,6 +1,3 @@
-// Import Three.js library
-import * as THREE from 'three';
-
 // Create the main scene
 const scene = new THREE.Scene();
 

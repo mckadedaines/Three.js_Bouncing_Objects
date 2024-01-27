@@ -8,6 +8,9 @@ This project demonstrates a simple Three.js scene featuring three distinct 3D ob
 - Smooth bouncing animation using sine function.
 - Responsive canvas resizing.
 
+## Demonstartion Video Link
+[Three.js for Sprint 1 - 10 min video](https://youtu.be/dM0Uo8EOS84)
+
 ## Setup
 To run this project, install it locally using npm:
 
