@@ -12,5 +12,11 @@ This project demonstrates a simple Three.js scene featuring three distinct 3D ob
 To run this project, install it locally using npm:
 
 ```bash
-npm install
-npm start
+# three.js
+npm install --save three
+
+# vite
+npm install --save-dev vite
+
+# Run this command to turn on the local server
+npx vite
