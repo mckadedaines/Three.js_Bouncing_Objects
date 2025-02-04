@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Three.js Bouncing Objects</title>
+  <head>
+    <title>Interactive Space Scene - Three.js Portfolio</title>
     <style>
-        body { margin: 0; }
-        canvas { display: block; }
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+      }
+      #info {
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-family: Arial, sans-serif;
+        pointer-events: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
     </style>
-</head>
-<body>
-    <!-- The scene-container is the element we will be creating our 3D objects in. -->
+  </head>
+  <body>
+    <div id="info">
+      <h1>Interactive Space Scene</h1>
+      <p>
+        Click and drag to orbit • Scroll to zoom • Press and drag objects to
+        interact
+      </p>
+    </div>
     <div id="scene-container"></div>
 
-    <!-- This script is used to retrieve certain information to help our objects move and form. -->
-    <script src="https://cdn.jsdelivr.net/npm/three@0.122.0/build/three.min.js"></script>
+    <!-- Import maps polyfill -->
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.157.0/examples/jsm/"
+        }
+      }
+    </script>
 
-    <!-- This script is where we create our 3D objects, animate them, and then render them on screen. -->
-    <script src="app.js"></script>
-</body>
+    <script type="module" src="app.js"></script>
+  </body>
 </html>

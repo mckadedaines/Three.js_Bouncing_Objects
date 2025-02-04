@@ -1,46 +1,68 @@
-# Overview
+# Interactive Solar System Simulation
 
-This project is an exploration into the capabilities of JavaScript and Three.js, focusing on creating interactive 3D graphics. By developing a scene with bouncing 3D objects, I aimed to deepen my understanding of 3D rendering and animation principles in web development. This endeavor is part of my ongoing journey as a software engineer to expand my skill set and grasp complex programming concepts.
+## Overview
 
-In this project, I've developed a simple yet visually engaging web application where users can observe three distinct 3D objects (a cube, a sphere, and a cone) bouncing in a synchronized manner. The primary purpose of this software is to explore and demonstrate the use of JavaScript, specifically with the Three.js library, in creating and animating 3D objects in a web environment.
+This project showcases an interactive 3D solar system simulation built with Three.js, demonstrating advanced web graphics capabilities and real-time physics-based animations. The simulation features a dynamic central star with realistic emission properties, orbiting planets with physically-based materials, and an immersive star field background.
 
-Watch the software demo video for a detailed run-through of the application in action and a code walkthrough, where I share insights about JavaScript language syntax and Three.js functionalities.
+## Features
 
-[Software Demo Video](https://youtu.be/dM0Uo8EOS84)
+- **Interactive 3D Environment**
 
-# Development Environment
+  - Orbital camera controls for full scene exploration
+  - Dynamic zoom and rotation capabilities
+  - Responsive design adapting to all screen sizes
 
-The project was developed using the following tools and technologies:
-- Visual Studio Code: As the primary code editor for writing JavaScript, HTML, and CSS.
-- Three.js: A JavaScript 3D library that makes WebGL simpler, used for creating and displaying animated 3D computer graphics in a web browser.
-- Git and GitHub: For version control and source code management.
+- **Realistic Celestial Bodies**
 
-The main programming language used in this project is JavaScript, alongside HTML and CSS for structuring and styling the webpage. Three.js library played a crucial role in rendering 3D graphics and animations.
+  - Central star with dynamic lighting and emission
+  - Four unique planets with distinct characteristics:
+    - Mercury-like blue planet in close orbit
+    - Mars-like orange planet in medium orbit
+    - Earth-like green planet
+    - Gas giant-inspired red planet in outer orbit
+  - Physically-based materials with realistic reflections
+  - Visible orbital paths
 
-# Useful Websites
+- **Advanced Rendering Features**
+  - High-quality anti-aliasing
+  - Bloom post-processing effects
+  - Environment mapping for realistic reflections
+  - Dynamic lighting system
+  - High DPI display support
 
-Here are some websites that were instrumental in the completion of this project:
+### Core Technologies
 
-- [Three.js Documentation](https://threejs.org/docs/index.html)
-- [Stack Overflow](https://stackoverflow.com/)
+- Three.js for 3D rendering and scene management
+- WebGL for hardware-accelerated graphics
+- ES6+ JavaScript for modern development practices
+- HTML5 and CSS3 for structure and styling
 
-# Future Work
+### Key Technical Features
 
-Several enhancements and additions are planned for future iterations of this project:
+- Post-processing pipeline with UnrealBloomPass
+- Physically-based rendering (PBR) materials
+- Dynamic environment mapping
+- Optimized particle system for star field
+- Responsive window management
+- Orbital mechanics simulation
 
-- Improving the responsiveness of the 3D scene for different screen sizes.
-- Integrating user interaction elements to control the movement of the 3D objects.
-- Enhancing the visual appeal by adding advanced lighting and textures.
+## Development Environment
 
-## Setup
-To run this project, install it locally using npm:
+- **Editor**: Visual Studio Code
+- **Package Manager**: npm
+- **Build Tool**: Vite
+- **Version Control**: Git
 
-```bash
-# three.js
-npm install --save three
+## Dependencies
 
-# vite
-npm install --save-dev vite
+- Three.js (3D graphics library)
+- Vite (Build tool and development server)
 
-# Run this command to turn on the local server
-npx vite -->
+## Browser Support
+
+This application is optimized for modern browsers that support WebGL and ES6+ JavaScript:
+
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
